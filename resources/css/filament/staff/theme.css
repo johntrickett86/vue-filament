@@ -1,0 +1,330 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+@import '/vendor/codewithdennis/filament-advanced-components/resources/css/index.css';
+
+@config 'tailwind.config.js';
+
+svg {
+    stroke-width: 1.5 !important;
+}
+
+/*Layout*/
+
+.fi-body {
+    @apply bg-gray-50 dark:bg-zinc-900 !important;
+}
+
+.fi-contained {
+    @apply bg-gray-50 dark:bg-zinc-900 !important;
+}
+
+.fi-topbar-database-notifications-btn {
+    @apply me-2;
+}
+
+.fi-layout {
+    @apply bg-gray-50 dark:bg-zinc-900 !important;
+}
+
+.fi-main-ctn {
+    @apply lg:py-2 lg:pe-2 !important;
+}
+
+.fi-main {
+    @apply mx-auto flex h-full w-full max-w-full flex-1 flex-col gap-4 border border-zinc-200/50 bg-white px-0 shadow-inner shadow-zinc-50 dark:border-neutral-800/50 dark:bg-neutral-950 dark:shadow-neutral-900 lg:rounded-xl !important;
+}
+
+.fi-section {
+    @apply rounded-lg;
+}
+
+.fi-topbar {
+    @apply lg:hidden !important;
+}
+
+.fi-topbar-open-sidebar-btn {
+    @apply h-8 w-8 !important;
+}
+
+.fi-header {
+    @apply h-16 border-b border-zinc-100 px-4 dark:border-neutral-800 !important;
+    flex-direction: row !important; /* Override flex-col */
+    align-items: center !important; /* Ensure vertical centering */
+    justify-content: space-between !important; /* Keep layout consistent */
+}
+
+.fi-header-heading {
+    @apply text-lg font-normal text-zinc-800 dark:text-zinc-200 lg:text-sm !important;
+}
+
+.fi-header-subheading {
+    @apply mt-0 hidden text-xs text-gray-500 dark:text-zinc-500 lg:flex !important;
+}
+
+.fi-dropdown-panel h4.text-base {
+    @apply text-sm; /* Override existing class */
+}
+
+.fi-wi {
+    @apply px-4 !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Sidebar */
+
+.fi-logo {
+    height: auto;
+}
+
+.fi-topbar,
+nav {
+    @apply bg-zinc-50 ring-gray-200 dark:bg-zinc-900 dark:ring-zinc-700 !important;
+}
+
+.fi-sidebar {
+    @apply min-h-svh border-none border-gray-200 bg-zinc-50 p-2 dark:border-zinc-700 dark:bg-zinc-900 !important;
+}
+
+.fi-sidebar-nav {
+    @apply gap-y-2 px-4 py-0 pb-6 pt-4;
+}
+
+.fi-sidebar-nav-groups {
+    @apply h-8 gap-y-4 !important;
+}
+
+.fi-sidebar-group-label {
+    @apply text-xs font-medium text-gray-500 !important;
+}
+
+.fi-sidebar-group-items {
+    @apply h-8 gap-y-2 !important;
+}
+
+.fi-sidebar-header {
+    @apply h-14 border-none bg-zinc-50 px-2 py-2 ring-0 dark:bg-zinc-900 !important;
+}
+
+.fi-sidebar-item {
+    @apply h-8 !important;
+}
+
+.fi-sidebar-item-button {
+    @apply h-8 gap-x-2 rounded-md px-2 py-2 text-sm !important;
+}
+
+.fi-sidebar-group-button {
+    @apply rounded-md px-2 py-2 !important;
+}
+
+.fi-sidebar-item-icon {
+    @apply size-4 shrink-0 text-gray-700 dark:text-zinc-300 !important;
+    stroke-width: 2;
+}
+
+.fi-sidebar-group-icon {
+    @apply size-5 shrink-0 text-gray-700 dark:text-zinc-300 !important;
+    stroke-width: 2;
+}
+
+.fi-sidebar-item-label {
+    @apply text-gray-700 dark:text-zinc-300 !important;
+}
+
+.fi-topbar-open-sidebar-btn {
+    @apply text-gray-800 dark:text-zinc-100 !important;
+}
+
+.fi-avatar {
+    @apply h-8 w-8 rounded-md bg-zinc-200 !important;
+}
+
+/* Pages */
+
+.fi-page > section {
+    @apply gap-y-0 py-0;
+}
+
+.fi-page-sub-navigation-sidebar-ctn {
+    @apply w-48;
+}
+
+.fi-breadcrumbs {
+    @apply mb-0 bg-transparent text-sm font-normal tracking-tight text-zinc-800 dark:bg-transparent dark:text-zinc-200 !important;
+}
+
+/* Buttons */
+
+.fi-btn {
+    @apply rounded-md text-sm;
+}
+
+.fi-btn-icon {
+    @apply text-current !important;
+}
+
+.fi-btn-label {
+    @apply font-medium !important;
+}
+
+/* Badges */
+
+.fi-badge {
+    @apply gap-x-0;
+}
+
+.fi-icon-btn-badge-ctn .fi-badge {
+    @apply bg-gray-50 text-xs text-gray-600 ring-gray-600/10 dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/30;
+}
+
+.fi-badge-delete-button {
+    @apply text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300;
+}
+
+/* Tables */
+
+.fi-ta-ctn {
+    @apply rounded-lg bg-white dark:bg-neutral-950 dark:ring-zinc-700 !important;
+}
+
+.fi-ta-group-header {
+    @apply py-4;
+}
+
+.fi-ta-cell {
+    @apply dark:bg-zinc-900;
+}
+
+.fi-ta-header-cell {
+    @apply dark:bg-zinc-900;
+}
+
+.fi-ta-actions-header-cell {
+    @apply dark:bg-zinc-900;
+}
+
+.fi-ta-empty-state-heading {
+    @apply text-lg font-semibold text-gray-600 dark:text-zinc-400;
+}
+
+/* Forms */
+
+.fi-input-wrp {
+    @apply rounded-md bg-transparent dark:bg-transparent !important;
+}
+
+.fi-input-wrp-label {
+    @apply text-gray-400 dark:text-zinc-500 !important;
+}
+
+.fi-fo-tabs {
+    @apply rounded-none shadow-none ring-0 ring-gray-200/50 dark:ring-zinc-700/50;
+}
+
+.advanced-tables-fav-bar-nav {
+    @apply bg-gray-50 dark:bg-zinc-900 !important;
+}
+
+.fi-tabs {
+    @apply mx-auto flex w-full gap-x-2 overflow-x-auto rounded-none border-gray-200/50 bg-gray-50 p-0 px-0 pb-2 shadow-none ring-0 ring-gray-950/5 dark:border-zinc-700/50 dark:bg-gray-900 dark:ring-white/10;
+}
+
+.fi-tabs-item {
+    @apply flex items-center gap-x-2 rounded-md px-3 py-2 text-sm font-normal outline-none transition duration-75 hover:bg-transparent dark:hover:bg-transparent;
+}
+
+div.fi-fo-tabs-tab.fi-active {
+    @apply p-0 pt-4;
+}
+
+.fi-tabs-item-label {
+    @apply text-gray-700 dark:text-gray-300;
+}
+
+.fi-tabs-item-active {
+    @apply relative bg-transparent font-semibold dark:bg-transparent;
+}
+
+.fi-tabs-item-active::after {
+    @apply bg-primary-500 absolute -bottom-2 left-0 right-0 h-0.5 rounded-full content-[''];
+    margin-inline: auto;
+    width: calc(100%);
+}
+
+.fi-resource-relation-managers {
+    @apply gap-y-0;
+}
+
+.fi-resource-relation-managers .fi-tabs {
+    @apply bg-transparent dark:bg-transparent !important;
+}
+
+/* Modals */
+
+.fi-modal-heading {
+    @apply text-sm;
+}
+
+.fi-modal-header div:first-child {
+    @apply my-auto flex;
+}
+
+.fi-modal-description {
+    @apply mt-0 text-sm;
+}
+
+.fi-modal-footer {
+    @apply rounded-lg py-4;
+}
+
+.fi-modal-content {
+    @apply flex gap-y-0 py-6;
+}
+
+.fi-modal-icon {
+    @apply size-6 p-1.5 !important;
+}
+
+.fi-tenant-menu-trigger {
+    @apply text-sm font-normal !important;
+}
+
+.fi-sidebar-nav-tenant-menu-ctn {
+    @apply mx-0 !important;
+}
+
+.fi-link {
+    @apply text-sm text-green-500 !important;
+}
+
+.fi-wi-stats-overview-stat {
+    @apply border-b-2 border-opacity-70 bg-white shadow-md ring-0 transition-shadow duration-300 ease-in-out hover:shadow-lg hover:ring-1 dark:bg-neutral-950 !important;
+}
+
+.fi-wi-stats-card-overview-stat-icon {
+    stroke-width: 2 !important;
+}
+
+.image-section .fi-section-content {
+    padding: 0;
+}
+
+/* Icons */
+
+.fi-icon-btn-icon {
+    @apply size-4 shrink-0 !important;
+    stroke-width: 2;
+}
+
+.fi-dropdown-list-item-icon {
+    @apply size-4 shrink-0 !important;
+    stroke-width: 2;
+}
